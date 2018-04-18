@@ -4,32 +4,53 @@
 .card .card-img img {
     width: 100%;
 }
-.card .large-card {
-    border-radius: o;
+
+.card {
+    border-radius: 0;
     border-color: #d9e0e3;
+    overflow: hidden;
+    position: relative;
 }
-.large-card .card-info {
-    padding: 25px 30px 15px;
+.card-label-flash::before {
+    content: "";
+    position: absolute;
+    top: -41px;
+    left: -36px;
+    width: 78px;
+    height: 92px;
+    transform: rotate(45deg);
+    background-color: #8bc34a; 
+    display: inline-block;
+    color: #fff;
+}
+
+.card.large-card .card-info {
+    padding: 24px 30px 9px;
 }
 .large-card .card-info .card-title {
     font-family: Roboto;
     font-weight: 500;
     font-size: 18px;
-    line-height: 3.3333;
+    /* line-height: 3.3333; */
     color: #263238;
-    margin-bottom: 0;
+    margin-bottom: 27px;
 }
 .large-card .card-info .card-category {
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
-    line-height: 4.29;
+    /* line-height: 4.29; */
     color: #8bc34a;
 }
+.card-info .card-price {
+    font-family: Roboto;
+    font-weight: bold;
+    line-height: 3;
+    color: #263238;
+}
 .large-card .card-author {
-    padding: 20px, 0;
-    border-top: 1px solid;
-    border-color: #d9e0e3;
+    padding: 2px 30px 5px;
+    border-top: 1px solid #d9e0e3;
 }
 .large-card .card-author span {
     font-family: Roboto;
@@ -37,4 +58,17 @@
     font-size: 14px;
     line-height: 4.29;
     color: #546e7a;
+}
+.card-product-rating .list-inline-item {
+    margin-right: 0;
+    color: #ffa726;
+}
+.large-card .rating-count {
+    margin-left: 13px;
+}
+.large-card .rating-count::before {
+    content: "(";
+}
+.large-card .rating-count::after {
+    content: ")";
 }
