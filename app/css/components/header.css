@@ -1,0 +1,30 @@
+/* --- Header start --- */
+/* -Top-header start- */
+.top-header {
+    padding: 27px 0;
+    background-color: #fff;
+}
+.header-help-text {
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #546e7a;
+}
+.header-help-text .text-red {
+    color: #e74c3c;
+}
+/* -Top-header end- */
+/* -Bottom-header start-*/
+.bottom-header {
+    background-color: #263238;
+}
+.bottom-header .header-nav .nav-link {
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.143;
+    color: #fff;
+}
+/* -Bottom-header end- */
+/* --- Header end --- */

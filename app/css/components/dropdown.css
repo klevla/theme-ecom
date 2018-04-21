@@ -1,0 +1,100 @@
+
+.dropdown-toggle::after {
+    display: none;
+}
+.header-dropdown-list .dropdown-toggle {
+display: block;
+background-color: #f5f5f5;
+font-size: 14px;
+line-height: 2;
+color: #a0a0a0;
+position: relative;
+width: 34px;
+text-align: center;
+}
+.header-dropdown-list li+li {
+    margin-left: 15px;
+}
+.header-dropdown-list .dropdown-toggle .count {
+    position: absolute;
+    top: -12px;
+    right: -7px;
+    font-family: open-sans;
+    font-weight: 600;
+    font-size: 11px;
+    /* line-height: 2.182; */
+    color: #fff;
+    width: 18px;
+    text-align: center;
+}
+#dropdown-alerts .count {
+    background-color: #fcb322;
+}
+#dropdown-messages .count {
+    background-color: #ef6c00;
+}
+#dropdown-cart .count {
+    background-color: #95c85a;
+}
+.header-dropdown-list .dropdown-menu {
+    min-width: 268px;
+    border: 0.833px solid rgb(204, 204, 204);
+    border-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+            box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+    position: absolute;
+    top: 0;
+}
+.dropdown-menu .dropdown-item {
+    padding: 18px 30px 20px 22px;
+    font-family: roboto;
+    font-weight: 400;
+    position: relative;
+}
+.dropdown-menu .dropdown-item +.dropdown-item {
+    border-top: 0.833px solid rgb(204, 204, 204);
+}
+.dropdown-item img {
+    margin-right: 19px;
+}
+.dropdown-menu .dropdown-item .item-content .item-name {
+    font-size: 12px;
+    color: #84b743;
+}
+.dropdown-menu .dropdown-item .item-content .item-date {
+    font-size: 10px;
+    color: #707070;
+}
+.dropdown-item .item-content .item-icon {
+    font-size: 16px;
+    line-height: 3.75;
+    color:  #b0bec5;
+}
+.dropdown-item .item-content .item-icon.new {
+    color: #ef6c00;
+}
+h6 .dropdown-item .item-content {
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 15px;
+    color: #263238;
+    margin-bottom: 0;
+}
+.dropdown-item .item-content .item-price {
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+}
+.item-summary {
+    border-top: 0.833px solid rgb(204, 204, 204);
+    position: fixed;
+    bottom: 0;
+}
+.item-summary {
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+}

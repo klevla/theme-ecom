@@ -1,10 +1,7 @@
+/* --- Cards start --- */
 .container-fluid {
     padding: 15px;
 }
-.card .card-img img {
-    width: 100%;
-}
-
 .card {
     border-radius: 0;
     border-color: #d9e0e3;
@@ -23,7 +20,7 @@
     display: inline-block;
     color: #fff;
 }
-
+/* -Large card start- */
 .card.large-card .card-info {
     padding: 24px 30px 9px;
 }
@@ -72,3 +69,5 @@
 .large-card .rating-count::after {
     content: ")";
 }
+/* -Large card end- */
+/* --- Cards End --- */
