@@ -18,16 +18,18 @@
   </head>
   <body>
      <!-- Header dropdowns -->
-     <header>
-     <!-- Dropdown list -->
+     <section class="d-flex flex-row" >
+     
      <div class="container">
-        <div class="header-dropdown-list d-flex align-items-center ">
+    <!-- Dropdown list -->
+        <ul class="header-dropdown-list d-flex align-items-center ">
             <li class="dropdown">
                 <a class="dropdown-toggle rounded-circle" href="#" role="button" id="dropdown-alerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="far fa-bell"></i>
                     <span class="count rounded-circle">8</span>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="dropdown-alerts">
+                <!-- / visible part -->
+                <div class="dropdown-menu dropdown-notification" aria-labelledby="dropdown-alerts">
                     <div class="dropdown-item d-flex align-items-center align-self-center">
                         <img src="img/dropdown-item-img-round.png" alt="">
                         <div class="item-content">
@@ -40,7 +42,7 @@
                             <i class="far fa-bell"></i>
                         </div>
                     </div>
-                    <!-- / dropdown-item -->
+                    <!-- / dropdown-item 1-->
                     <div class="dropdown-item d-flex align-items-center align-self-center">
                         <img src="img/dropdown-item-img-round.png" alt="">
                         <div class="item-content">
@@ -53,7 +55,7 @@
                             <i class="far fa-bell"></i>
                         </div>
                     </div>
-                    <!-- / dropdown-item -->
+                    <!-- / dropdown-item 2-->
                 </div>
             </li>
             <li class="dropdown">
@@ -62,10 +64,49 @@
                     <span class="count rounded-circle">5</span>
                 </a>
                 
-                <div class="dropdown-menu" aria-labelledby="dropdown-messages">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-menu dropdown-notification" aria-labelledby="dropdown-messages">
+                    <div class="dropdown-item d-flex align-items-center align-self-center">
+                        <img src="img/dropdown-item-img-round.png" alt="">
+                        <div class="item-content">
+                            <!-- <h6></h6> -->
+                            <span class="message-author d-block">Kazi Fahim</span>
+                            <span class="item-name d-block">Need WP help!</span>
+                            <span class="item-date d-block">01 Dec, 2016</span>
+                            <!-- <span class="item-price"></span> -->
+                        </div>
+                        <div class="item-icon new ml-auto">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                    </div>
+                    <!-- / dropdown-item 1 -->
+                    <div class="dropdown-item d-flex align-items-center align-self-center">
+                        <img src="img/dropdown-item-img-round.png" alt="">
+                        <div class="item-content">
+                            <!-- <h6></h6> -->
+                            <span class="message-author d-block">Richi Lenal</span>
+                            <span class="item-name d-block">Need WP help!</span>
+                            <span class="item-date d-block">26 Nov, 2016</span>
+                            <!-- <span class="item-price"></span> -->
+                        </div>
+                        <div class="item-icon ml-auto">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                    </div>
+                    <!-- / dropdown-item 2 -->
+                    <div class="dropdown-item d-flex align-items-center align-self-center">
+                        <img src="img/dropdown-item-img-round.png" alt="">
+                        <div class="item-content">
+                            <!-- <h6></h6> -->
+                            <span class="message-author d-block">PsdBoss</span>
+                            <span class="item-name d-block">Need WP help!</span>
+                            <span class="item-date d-block">01 Dec, 2016</span>
+                            <!-- <span class="item-price"></span> -->
+                        </div>
+                        <div class="item-icon ml-auto">
+                            <i class="fas fa-reply"></i>
+                        </div>
+                    </div>
+                    <!-- / dropdown-item 3 -->
                 </div>
             </li>
             <li class="dropdown">
@@ -73,9 +114,9 @@
                     <i class="fas fa-shopping-cart"></i>
                     <span class="count rounded-circle">9</span>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="dropdown-cart">
+                <div class="dropdown-menu dropdown-notification" aria-labelledby="dropdown-cart">
                     <div class="dropdown-item d-flex align-items-center">
-                        <img src="img/dropdown-item-img-cart.png" alt="">
+                        <a href=""><img src="img/dropdown-item-img-cart.png" alt=""></a>
                         <div class="item-content">
                             <h6>Grand Ballet</h6>
                             <span class="item-name d-block">Word Press</span>
@@ -88,7 +129,7 @@
                     </div>
                     <!-- / dropdown-item -->
                     <div class="dropdown-item d-flex align-items-center">
-                        <img src="img/dropdown-item-img-cart.png" alt="">
+                        <a href=""><img src="img/dropdown-item-img-cart.png" alt=""></a>
                         <div class="item-content">
                             <h6>Apple device</h6>
                             <span class="item-name d-block">Word Press</span>
@@ -99,11 +140,11 @@
                             <i class="far fa-bell"></i>
                         </div> -->               
                     </div>
-                    <div class="item-summary d-flex align-items-center justify-content-between">
+                    <div class="item-summary d-flex justify-content-between">
                             <span>Total</span>
                             <span>$118</span>                           
                     </div>
-                    <div class="item-buttons d-block align-items-center">
+                    <div class="go-checkout">
                         <a href="#" class="btn-success">Go to Cart</a>
                         <a href="" class="btn-warning">Go to Checkout</a>
                     </div>  
@@ -111,11 +152,62 @@
                     <!-- / dropdown-item -->
                 </div>
             </li>
-        </div>
+        </ul>
         <!-- / header dropdown list --> 
+        <!-- User-profile-dropdown start-->
+        <div class="user-account-section ">
+                <div class="dropdown show ">
+                    <a class="dropdown-toggle d-flex align-items-center" href="" role="button" id="profile-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/user-img-header.png" alt="">
+                        <div class="user-data">
+                            <span class="user-name d-block">Mike Hussy</span>
+                            <span class="user-balance">$171</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                
+                <div class="dropdown-menu user-profile-dropdown" aria-labelledby="profile-dropdown">
+                    <a class="dropdown-item" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Profile Page</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Portfolio</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Account Settings</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Downloads</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Wishlist</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Upload Item</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Statement</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Withdraws</span>
+                    </a>
+                </div>
+                <!-- /dropdown-menu -->
+            </div>
+            <!-- / dropdown -->
+        </div>
+        <!-- User-profile-dropdown end-->
      </div>
      <!-- / container -->
-    </header>
+    </section>
     
 
     <!-- Optional JavaScript -->

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     
     <!-- Font Awesome -->
-    <link href="/source/css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:600|Raleway:700|Roboto:400,500,700" rel="stylesheet">
 
@@ -31,42 +31,190 @@
             <span>Talk to an expert: +61 3 8376 6284</span>
           </div>     
           <!-- List dropdowns -->
-          <div class="header-dropdown-list">
-            <li class="dropdown">
-              <a class="dropdown-toggle" href="#" role="button" id="dropdown-alerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="far fa-bell"></i>
-              </a>
-            
-              <div class="dropdown-menu" aria-labelledby="dropdown-alerts">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+          <ul class="header-dropdown-list d-flex align-items-center ">
+              <li class="dropdown">
+                  <a class="dropdown-toggle rounded-circle" href="#" role="button" id="dropdown-alerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-bell"></i>
+                      <span class="count rounded-circle">8</span>
+                  </a>
+                  <!-- / visible part -->
+                  <div class="dropdown-menu dropdown-notification" aria-labelledby="dropdown-alerts">
+                      <div class="dropdown-item d-flex align-items-center align-self-center">
+                          <img src="img/dropdown-item-img-round.png" alt="">
+                          <div class="item-content">
+                              <!-- <h6></h6> -->
+                              <span class="item-name d-block">Need WP help!</span>
+                              <span class="item-date d-block">01 Dec, 2016</span>
+                              <!-- <span class="item-price"></span> -->
+                          </div>
+                          <div class="item-icon ml-auto">
+                              <i class="far fa-bell"></i>
+                          </div>
+                      </div>
+                      <!-- / dropdown-item 1-->
+                      <div class="dropdown-item d-flex align-items-center align-self-center">
+                          <img src="img/dropdown-item-img-round.png" alt="">
+                          <div class="item-content">
+                              <!-- <h6></h6> -->
+                              <span class="item-name d-block">Need WP help!</span>
+                              <span class="item-date d-block">01 Dec, 2016</span>
+                              <!-- <span class="item-price"></span> -->
+                          </div>
+                          <div class="item-icon new ml-auto">
+                              <i class="far fa-bell"></i>
+                          </div>
+                      </div>
+                      <!-- / dropdown-item 2-->
+                  </div>
+              </li>
+              <li class="dropdown">
+                  <a class="dropdown-toggle rounded-circle" href="#" role="button" id="dropdown-messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-envelope"></i>
+                      <span class="count rounded-circle">5</span>
+                  </a>
+                  
+                  <div class="dropdown-menu dropdown-notification" aria-labelledby="dropdown-messages">
+                      <div class="dropdown-item d-flex align-items-center align-self-center">
+                          <img src="img/dropdown-item-img-round.png" alt="">
+                          <div class="item-content">
+                              <!-- <h6></h6> -->
+                              <span class="message-author d-block">Kazi Fahim</span>
+                              <span class="item-name d-block">Need WP help!</span>
+                              <span class="item-date d-block">01 Dec, 2016</span>
+                              <!-- <span class="item-price"></span> -->
+                          </div>
+                          <div class="item-icon new ml-auto">
+                              <i class="far fa-envelope"></i>
+                          </div>
+                      </div>
+                      <!-- / dropdown-item 1 -->
+                      <div class="dropdown-item d-flex align-items-center align-self-center">
+                          <img src="img/dropdown-item-img-round.png" alt="">
+                          <div class="item-content">
+                              <!-- <h6></h6> -->
+                              <span class="message-author d-block">Richi Lenal</span>
+                              <span class="item-name d-block">Need WP help!</span>
+                              <span class="item-date d-block">26 Nov, 2016</span>
+                              <!-- <span class="item-price"></span> -->
+                          </div>
+                          <div class="item-icon ml-auto">
+                              <i class="far fa-envelope"></i>
+                          </div>
+                      </div>
+                      <!-- / dropdown-item 2 -->
+                      <div class="dropdown-item d-flex align-items-center align-self-center">
+                          <img src="img/dropdown-item-img-round.png" alt="">
+                          <div class="item-content">
+                              <!-- <h6></h6> -->
+                              <span class="message-author d-block">PsdBoss</span>
+                              <span class="item-name d-block">Need WP help!</span>
+                              <span class="item-date d-block">01 Dec, 2016</span>
+                              <!-- <span class="item-price"></span> -->
+                          </div>
+                          <div class="item-icon ml-auto">
+                              <i class="fas fa-reply"></i>
+                          </div>
+                      </div>
+                      <!-- / dropdown-item 3 -->
+                  </div>
+              </li>
+              <li class="dropdown">
+                  <a class="dropdown-toggle rounded-circle" href="#" role="button" id="dropdown-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span class="count rounded-circle">9</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-notification" aria-labelledby="dropdown-cart">
+                      <div class="dropdown-item d-flex align-items-center">
+                          <a href=""><img src="img/dropdown-item-img-cart.png" alt=""></a>
+                          <div class="item-content">
+                              <h6>Grand Ballet</h6>
+                              <span class="item-name d-block">Word Press</span>
+                              <!-- <span class="item-date d-block"></span> -->
+                              <span class="item-price d-block">$59</span>
+                          </div>
+                          <!-- <div class="item-icon new ml-auto">
+                              <i class="far fa-bell"></i>
+                          </div> -->
+                      </div>
+                      <!-- / dropdown-item -->
+                      <div class="dropdown-item d-flex align-items-center">
+                          <a href=""><img src="img/dropdown-item-img-cart.png" alt=""></a>
+                          <div class="item-content">
+                              <h6>Apple device</h6>
+                              <span class="item-name d-block">Word Press</span>
+                              <!-- <span class="item-date d-block"></span> -->
+                              <span class="item-price d-block">$59</span>
+                          </div>
+                          <!-- <div class="item-icon new ml-auto">
+                              <i class="far fa-bell"></i>
+                          </div> -->               
+                      </div>
+                      <div class="item-summary d-flex justify-content-between">
+                              <span>Total</span>
+                              <span>$118</span>                           
+                      </div>
+                      <div class="go-checkout">
+                          <a href="#" class="btn-success">Go to Cart</a>
+                          <a href="" class="btn-warning">Go to Checkout</a>
+                      </div>  
+                          <!-- / item-summary -->
+                      <!-- / dropdown-item -->
+                  </div>
+              </li>
+          </ul>
+          <!-- Account section start -->
+          <div class="user-account-section">
+              <div class="dropdown show">
+                  <a class="dropdown-toggle d-flex align-self-center" href="" role="button" id="profile-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="img/user-img-header.png" alt="">
+                      <div class="user-data">
+                          <span class="user-name d-block">Mike Hussy</span>
+                          <span class="user-balance">$171</span>
+                      </div>
+                      <i class="fas fa-chevron-down"></i>
+                  </a>
+                  
+                  <div class="dropdown-menu user-profile-dropdown" aria-labelledby="profile-dropdown">
+                      <a class="dropdown-item" href="#">
+                              <i class="fas fa-chevron-right"></i>
+                              <span>Profile Page</span>
+                      </a>
+                      <a class="dropdown-item" href="#">
+                              <i class="fas fa-chevron-right"></i>
+                              <span>Portfolio</span>
+                      </a>
+                      <a class="dropdown-item" href="#">
+                              <i class="fas fa-chevron-right"></i>
+                              <span>Account Settings</span>
+                      </a>
+                      <a class="dropdown-item" href="#">
+                              <i class="fas fa-chevron-right"></i>
+                              <span>Downloads</span>
+                      </a>
+                      <a class="dropdown-item" href="#">
+                              <i class="fas fa-chevron-right"></i>
+                              <span>Wishlist</span>
+                      </a>
+                      <a class="dropdown-item" href="#">
+                              <i class="fas fa-chevron-right"></i>
+                              <span>Upload Item</span>
+                      </a>
+                      <a class="dropdown-item" href="#">
+                              <i class="fas fa-chevron-right"></i>
+                              <span>Statement</span>
+                      </a>
+                      <a class="dropdown-item" href="#">
+                              <i class="fas fa-chevron-right"></i>
+                              <span>Withdraws</span>
+                      </a>
+                  </div>
+                  <!-- /dropdown-menu -->
               </div>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" href="#" role="button" id="dropdown-messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="far fa-envelope"></i>
-              </a>
-              
-              <div class="dropdown-menu" aria-labelledby="dropdown-messages">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
+              <!-- / dropdown -->
           </div>
-          <li class="dropdown">
-            <a class="  dropdown-toggle" href="#" role="button" id="dropdown-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="far fa-shopping-cart"></i>
-              </a>
-            
-              <div class="dropdown-menu" aria-labelledby="dropdown-cart">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-          </li>
-          <!-- Account||login register btn -->
+          <!-- Account section end -->
+          <!-- Login/register btn start -->
+          <!-- Login/register btn end -->
         </div>
         <!-- / container -->
       </div>
