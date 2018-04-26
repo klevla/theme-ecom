@@ -8,6 +8,10 @@
     overflow: hidden;
     position: relative;
 }
+.card:hover {
+    box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+}
+
 .card-label-flash::before {
     content: "";
     position: absolute;
